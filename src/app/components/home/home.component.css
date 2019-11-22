@@ -1,0 +1,43 @@
+.wrapper {
+    padding-top: 50px;
+    background: rgb(120, 217, 255);
+    border-left: 10px solid rgb(255, 60, 0);
+}
+
+ul, li {
+    list-style: decimal-leading-zero;
+}
+
+.nested li {
+    margin-left: 0em;
+}
+
+.comment {
+    background: rgb(0, 159, 233);
+    border: 5px solid rgb(0, 224, 253);
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.comment p {
+    word-break: keep-all;
+}
+
+ul.nested li ul {
+    border-left: 10px solid rgb(217, 255, 0);
+    position: relative;
+}
+
+ul.nested li ul::after {
+    content: '';
+    width: 3em;
+    top: 2em;
+    left: 50px;
+}
+
+.addButton {
+    background: rgb(3, 196, 138);
+    border: 2px solid rgb(253, 215, 0);
+}
+
+
